@@ -7,6 +7,7 @@ const initial_state = {
         id: 101,
         title: 'Add New Book',
         subTitle: 'New Book',
+        check: false
       },
     ],
 
@@ -15,6 +16,7 @@ const initial_state = {
         id: 102,
         title: 'Add New pen',
         subTitle: 'New pen',
+        check: false
       },
     ],
 
@@ -23,19 +25,20 @@ const initial_state = {
         id: 103,
         title: 'Add New pencil',
         subTitle: 'New pencil',
+        check: false
       },
     ],
   },
   is_editing:false,
   editedData: null,
+
 };
 
 
 
 export const todoReducer = (state = initial_state, action) => {
   const {type, payload} = action;
-  console.log();
-  console.log('payload======>>>>>>',payload);
+  // console.log('payload======>>>>>>',payload);
 
   switch (type) {
     case ADD_TODO:

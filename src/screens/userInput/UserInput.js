@@ -47,7 +47,7 @@ export default function UserInput({route, navigation}) {
     } else {
       dispatch(
         addNewData(
-          [...data[nav], {title: title, subTitle: subTitle, id: +new Date()}],
+          [...data[nav], {title: title, subTitle: subTitle, check: false, id: +new Date()}],
           nav,
         ),
       );
@@ -58,6 +58,7 @@ export default function UserInput({route, navigation}) {
     <View style={style.inputCont}>
       <View style= {style.inputContSec}>
         <TextInput
+          autoFocus={true}
           style={style.title}
           value={title}
           onChangeText={text => setTitle(text)}

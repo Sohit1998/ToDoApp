@@ -44,7 +44,11 @@ export default partiularCatStyle = StyleSheet.create({
         borderTopLeftRadius: 20,
         backgroundColor: 'rgb(236,88,91)',
         
-
+    },
+    addBtnText: {
+        color: 'white',
+        fontWeight: '700',
+        fontSize: 22
     },
     title: {
         fontSize: 23,
@@ -55,5 +59,8 @@ export default partiularCatStyle = StyleSheet.create({
     subTitle: {
         padding: 10,
         color: '#073980'
+    },
+    uncheck: {
+        opacity: 0.3
     }
 })
